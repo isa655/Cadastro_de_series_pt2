@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cadastro de série</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de séries</h1>
+            <p>Preencha os dados abaixo!!</p>
+        </header>
+        <main>
+            <section>
+                <h2>Novo série</h2>
+
+                <form id="form-heroi" method="post">
+                    <label for="title">Nome da série : </label>
+                    <input id="title" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="gênero">gênero:</label>
+                    <input id="gênero" name="gênero" type="text" required />
+
+                    <label for="numero_temporadas">numero_temporadas: </label>
+                    <input id="title" type="text" required />
+
+                    <label for="ano_lancamento">ano_lançamento: </label>
+                    <input id="title" name="ano_lancamento" type="text" required />
+
+                    <label for="imageUrl">URL da imagem: </label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+
+                    <button type="submit">Cadastrar série</button>
+
+                    
+                </form>
+
+                <p id="respostas"></p>
+            </section>
+        </main>
+    </body>
+</html>
