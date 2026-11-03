@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulta de Séries - GET</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Consulta de Séries</h1>
+      <p>Prática do método GET: buscar e exibir dados da API.</p>
+    </header>
+
+    <main>
+      <a href="../index.html">Voltar ao cadastro (POST)</a>
+      <section aria-labelledby="titulo-lista">
+        <h2 id="titulo-lista">Séries cadastradas</h2>
+        <p>As séries são carregadas automaticamente ao abrir a página.</p>
+        <p id="resposta" role="status" aria-live="polite"></p>
+        <ul id="lista-series"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Prática de consulta com API.</p>
+    </footer>
+
+    <!-- Modelo que o JavaScript copia para cada série -->
+    <template id="modelo-serie">
+      <li>
+        <div class="card-capa">
+          <span class="sem-imagem">Imagem indisponível</span>
+          <img class="imagem-serie" alt="" loading="lazy" />
+        </div>
+        <div class="card-conteudo">
+          <h3 class="nome"></h3>
+          <p><strong>Gênero:</strong> <span class="genero"></span></p>
+          <p><strong>Temporadas:</strong> <span class="numero"></span></p>
+          <p><strong>Ano de Lançamento:</strong> <span class="ano"></span></p>
+          <p><strong>Plataforma:</strong> <span class="plataforma"></span></p>
+          <p><strong>Nota:</strong> <span class="nota"></span></p>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
